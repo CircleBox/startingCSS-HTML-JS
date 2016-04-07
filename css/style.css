@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Ikaros'; /*a name to be used later*/
+    src: url('../fonts/Ikaros-Light.ttf'); /*URL to font*/
+}
+
+
+
+body{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2) url("../files/noizeBigger.png");
+}
+
+div{
+    text-align: center;
+    font-family: Arial,Sans-Serif;
+    font-weight:500;
+
+
+
+}
+
+.growWrapper{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+
+    position: relative;
+    top: 50%;
+    -webkit-transform:translateY(+100%);
+    -ms-transform:translateY(+100%);
+    transform: translateY(+100%);
+
+
+
+}
+.growWrapper:hover .growCircleShape {
+    background-color:rgba(0,117,61,1);
+    border-radius: 50%;
+    /*-webkit-transform: rotateY(-680deg);
+    -ms-transform: rotateY(-680deg);
+    transform: rotateY(-680deg);*/
+    box-shadow:0px 0px 95px 80px rgba(0,41,21,1) inset;
+
+}
+.growWrapper:hover .growBoxShape {
+    background-color:rgba(7,9,41,0.1);
+    border-radius: 10%;
+
+}
+.growWrapper:hover .growContent{
+    font-size:1.4em;
+}
+.growWrapper:hover .innerBox{
+    /*background-color:rgba(29,41,181,0.2);
+    height: 66%;
+    width: 66%;
+    box-shadow:0px 0px 117px 111px rgba(29,41,181,0.1) inset;*/
+}
+.growWrapper:hover .announcement{
+    opacity: 1;
+    visibility: visible !important;
+    text-shadow: 5px 5px rgba(0,41,21,1);
+}
+
+
+.growBoxShape{
+
+    border-radius: 5%;
+    -webkit-transition:all 0.5s ease; /*Safari*/
+    transition: all 0.5s ease;
+   /* background-color:rgba(7,9,41,0.9);*/
+    height: 100%;
+    width:100%;
+
+
+
+}
+.growCircleShape{
+    border-radius: 5%;
+    -webkit-transition:all 0.3s ease-out; /*Safari*/
+    transition: all 0.3s ease-out;
+    /*background-color:rgba(7,9,41,0);*/
+    background-color:rgba(0,41,21,0.8);
+    height: 100%;
+    width: 100%;
+    box-shadow:10px 5px 105px 30px rgba(0,41,21,0.8) inset;
+}
+.innerBox {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    border-radius: 25%;
+    position: relative;
+    top: 50%;
+    -webkit-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition:all 0.3s ease-out; /*Safari*/
+
+    transition: all 0.3s ease-out;
+
+}
+.growContent{
+    visibility: visible !important;
+    -webkit-transition:all 0.3s ease-out; /*Safari*/
+    transition: all 0.3s ease-out;
+    color: azure;
+    font-size:2em;
+
+    position: relative;
+    top: 50%;
+    -webkit-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    transform: translateY(-50%);
+
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* IE/Edge */
+    user-select: none;
+}
+.announcement{
+    margin: auto;
+    visibility: hidden;
+    height: 60px;
+    width: 100%;
+    color: rgba(7,8,41,1);
+    opacity: 0;
+    background-color:rgba(7,8,41,0);
+    border-radius: 5%;
+
+    -webkit-transition:all 1.5s ease-in; /*Safari*/
+    transition: all 1.5s ease-in;
+
+    font-family:Ikaros,Sans-Serif;
+    position: relative;
+    top: 50%;
+    -webkit-transform:translateY(+10%);
+    -ms-transform:translateY(+10%);
+    transform: translateY(+10%);
+    color: rgba(7, 8, 41, 0);
+    text-shadow: 5px 5px 100px rgba(0,41,21,1);
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* IE/Edge */
+    user-select: none;
+}
